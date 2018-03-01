@@ -11,7 +11,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ProductPricture extends Model
+class ProductPicture extends Model
 {
     protected $table = 'ss_product_pictures';
     protected $primaryKey = 'photoID';
