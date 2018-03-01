@@ -36,4 +36,9 @@ class Product extends Model
         return $this->belongsTo('App\Models\ProductBrand','brandID','id');
     }
 
+    public function productDimension()
+    {
+        return $this->belongsTo('App\Models\ProductDimension','dimensionID','id');
+    }
+
 }
