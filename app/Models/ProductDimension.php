@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ProductAdditional extends Model
+class ProductDimension extends Model
 {
     protected $table = 'ss_product_dimension';
     protected $primaryKey = 'id';
