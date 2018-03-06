@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\Warehouse;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,6 +10,6 @@ class WarehouseService extends Model
 
     public function warehouses()
     {
-        return $this->hasMany('App\Models\Warehouse','service_id');
+        return $this->hasMany('App\Models\Warehouse\Warehouse','service_id');
     }
 }

@@ -4,9 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use App\Excel\ProductImport;
 use App\Http\Requests\UpdateProductRequest;
+use App\Models\Product\Product;
 use App\Models\ProductAdditional;
-use App\Models\ProductBrand;
-use App\Models\WarehouseService;
+use App\Models\Product\ProductBrand;
+use App\Models\Product\ProductPicture;
 use App\Repositories\AdminRepository;
 use App\Repositories\CategoryRepository;
 use App\Repositories\ProductRepository;
@@ -14,6 +15,7 @@ use App\Repositories\WarehouseRepository;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Config;
+use Maatwebsite\Excel\Excel;
 
 class ProductsController extends Controller
 {
@@ -127,15 +129,43 @@ class ProductsController extends Controller
         return view('admin.products.import');
     }
 
-    public function doImport(Request $request,ProductImport $productImport)
+    public function doImport(Request $request)
     {
+//        $file = Input::file('importProductCSV');
+//        Excel::load($file, function ($reader) {
+//            $sheet = $reader->getActiveSheet();
+//            $letters = $reader->get()[0]->keys();
+//
+//            foreach ($letters as &$letter) {
+//                $letter = strstr($letter, '*') ? ltrim($letter,'*') : $letter;
+//            }
+//
+//
+//            foreach ($reader->get() as $row => $result) {
+//                if ($row == 0) continue;
+//                $data = array_combine($letters,$result);
+//                foreach ($data as $column => $cell_value) {
+//
+//                    if (in_array($column, (new Product)->getFillable())) {
+//
+//                    } elseif (in_array($column, (new ProductAdditional)->getFillable())) {
+//
+//                    } elseif (in_array($column, (new ProductDimension)->getFillable())) {
+//
+//                    } elseif (in_array($column, (new ProductPicture)->getUploadField())) {
+//
+//                    } elseif (in_array($column,(new Product)->getDescUploadField())) {
+//
+//                    }
+//                }
+//            }
+//        });
 
-
-       $productsList = $productImport->get();
-       foreach ($productsList as $product ){
-           print_r($product->brand);
-       }
-       exit();
+//       $productsList = $productImport->get();
+//       foreach ($productsList as $product ){
+//           print_r($product->brand);
+//       }
+//       exit();
 //       dd($csv->toArray());
 
 

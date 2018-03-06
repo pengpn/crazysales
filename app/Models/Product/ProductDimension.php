@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\Product;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,6 +13,6 @@ class ProductDimension extends Model
 
     public function product()
     {
-        return $this->hasOne('App\Models\Product','productID','id');
+        return $this->hasOne('App\Models\Product\Product','productID','id');
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\Warehouse\Warehouse;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,6 +10,6 @@ class Warehouse extends Model
 
     public function warehouseService()
     {
-        return $this->belongsTo('App\Models\WarehouseService');
+        return $this->belongsTo('App\Models\Warehouse\WarehouseService');
     }
 }

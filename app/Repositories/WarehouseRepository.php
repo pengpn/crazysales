@@ -1,7 +1,7 @@
 <?php
 namespace App\Repositories;
 
-use App\Models\WarehouseService;
+use App\Models\Warehouse\WarehouseService;
 
 class WarehouseRepository
 {
