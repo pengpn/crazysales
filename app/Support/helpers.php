@@ -1,6 +1,6 @@
 <?php
 
-if (! function_exists('arrayToObject')) {
+if (!function_exists('arrayToObject')) {
     /**
      * 数组转换对象
      *
@@ -19,7 +19,7 @@ if (! function_exists('arrayToObject')) {
     }
 }
 
-if (! function_exists('objectToArray')) {
+if (!function_exists('objectToArray')) {
     /**
      * 对象转换数组
      *
@@ -45,7 +45,7 @@ if (!function_exists('admin_toastr')) {
      *
      * @param string $message
      * @param string $type
-     * @param array  $options
+     * @param array $options
      *
      * @return string
      */
@@ -59,6 +59,10 @@ if (!function_exists('admin_toastr')) {
 }
 
 if (!function_exists('costFormat')) {
+    /**
+     * @param $num
+     * @return float
+     */
     function costFormat($num)
     {
         $num = round($num, 2);
