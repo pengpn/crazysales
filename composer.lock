@@ -4,8 +4,122 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c38942d31faca27f31bd9f521ccfd352",
+    "content-hash": "c62c31d31e452a5913de73d39103f8ff",
     "packages": [
+        {
+            "name": "anahkiasen/former",
+            "version": "4.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/formers/former.git",
+                "reference": "53327a674c9b5607106784a9161ff91e62ade6e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/formers/former/53327a674c9b5607106784a9161ff91e62ade6e4.zip",
+                "reference": "53327a674c9b5607106784a9161ff91e62ade6e4",
+                "shasum": ""
+            },
+            "require": {
+                "anahkiasen/html-object": "~1.4",
+                "illuminate/config": "~5.0",
+                "illuminate/container": "~5.0",
+                "illuminate/http": "~5.0",
+                "illuminate/routing": "~5.0",
+                "illuminate/session": "~5.0",
+                "illuminate/translation": "~5.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/database": "~5.0",
+                "mockery/mockery": "~0.9.1",
+                "phpunit/phpunit": "~4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Former\\FormerServiceProvider"
+                    ],
+                    "aliases": {
+                        "Former": "Former\\Facades\\Former"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Former\\": [
+                        "src/Former",
+                        "tests"
+                    ],
+                    "Laravel\\": "src/Laravel"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Fabre",
+                    "email": "ehtnam6@gmail.com"
+                }
+            ],
+            "description": "A powerful form builder",
+            "homepage": "http://formers.github.io/former/",
+            "keywords": [
+                "bootstrap",
+                "form",
+                "foundation",
+                "laravel"
+            ],
+            "time": "2018-01-02T20:20:00+00:00"
+        },
+        {
+            "name": "anahkiasen/html-object",
+            "version": "1.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Anahkiasen/html-object.git",
+                "reference": "45bb54b91112c064d3906c207259d5c8dcba798f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/Anahkiasen/html-object/45bb54b91112c064d3906c207259d5c8dcba798f.zip",
+                "reference": "45bb54b91112c064d3906c207259d5c8dcba798f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "madewithlove/php-cs-fixer-config": "^1.3",
+                "phpunit/phpunit": "^4.8",
+                "phpunit/phpunit-dom-assertions": "^0.1.0",
+                "symfony/css-selector": "^2.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HtmlObject\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anahkiasen",
+                    "email": "ehtnam6@gmail.com"
+                }
+            ],
+            "description": "A set of classes to create and manipulate HTML objects abstractions",
+            "time": "2017-05-31T07:52:45+00:00"
+        },
         {
             "name": "barryvdh/laravel-debugbar",
             "version": "v3.1.0",
