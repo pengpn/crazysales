@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Admin\User;
 
 use Illuminate\Http\Request;
-//use App\Repository\AdminRepository;
-use App\Repository\AdminRepository;
+use App\Repositories\AdminRepository;
 use App\Http\Controllers\Controller;
 use Auth;
 
